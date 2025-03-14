@@ -6,14 +6,12 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #ffffff;
 }
 
-/* Container: Centers overall content and controls max width */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,9 +21,8 @@ body {
 /* Header Section */
 header {
   text-align: center;
-  /* A subtle background gradient for visual interest: */
   background: linear-gradient(135deg, #fce4ec 0%, #f8f8f8 100%);
-  padding: 80px 20px; /* Extra padding for a more "hero" feel */
+  padding: 80px 20px;
   margin-bottom: 40px;
   border-radius: 10px;
   position: relative;
@@ -99,24 +96,23 @@ h1 {
 /* Form Section */
 .signup {
   max-width: 500px;
-  margin: 0 auto 60px; /* 0 auto ensures it's centered */
+  margin: 0 auto 60px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  text-align: center; /* Center any text or inline elements within .signup */
+  text-align: center;
 }
 
-/* The placeholder form (Replace with ConvertKit form) */
 #temp-form {
-  display: flex;            /* Lay out input/button in a vertical stack */
+  display: flex;
   flex-direction: column;
-  align-items: center;      /* Center them horizontally */
+  align-items: center;
   width: 100%;
 }
 
 #temp-form input {
-  width: 80%;               /* Make input 80% of the .signup container’s width */
+  width: 80%;
   max-width: 400px;
   padding: 15px;
   margin-bottom: 15px;
@@ -126,7 +122,7 @@ h1 {
 }
 
 #temp-form button {
-  background-color: #e91e63; /* More eye-catching CTA color (pink) */
+  background-color: #e91e63;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -138,7 +134,7 @@ h1 {
 }
 
 #temp-form button:hover {
-  background-color: #d81b60; /* Darken on hover */
+  background-color: #d81b60;
 }
 
 .privacy {
@@ -164,44 +160,16 @@ h1 {
   font-weight: 600;
 }
 
-.newsletter-preview {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+/* New styles for the newsletter template preview */
+.newsletter-template-container {
   max-width: 600px;
   margin: 0 auto 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.preview-image {
-  width: 35%;
-  height: 150px;
-  background-color: #f2f2f2;
+.newsletter-template {
+  width: 100%;
   border-radius: 5px;
-  margin-bottom: 20px; /* Slight gap for small screens */
-}
-
-.preview-products {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.product {
-  width: 48%;
-  height: 70px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.preview p {
-  font-size: 14px;
-  color: #666;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* Mobile Responsiveness */
@@ -209,41 +177,35 @@ h1 {
   h1 {
     font-size: 32px;
   }
-
+  
   .subheadline {
     font-size: 18px;
   }
-
+  
   .process-flow {
     flex-direction: column;
     padding: 30px 20px;
   }
-
+  
   .step {
     width: 100%;
     margin-bottom: 30px;
   }
-
+  
   .arrow {
     transform: rotate(90deg);
     margin: 10px 0;
   }
-
+  
   .signup {
     padding: 30px 20px;
   }
-
+  
   .preview {
     padding: 30px 20px;
   }
-
-  .newsletter-preview {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .preview-image,
-  .preview-products {
+  
+  .newsletter-template-container {
     width: 100%;
   }
 }
@@ -252,12 +214,12 @@ h1 {
   h1 {
     font-size: 28px;
   }
-
+  
   header {
     padding: 40px 15px;
   }
-
-  .preview-image {
+  
+  .newsletter-template {
     margin-bottom: 15px;
   }
 }
