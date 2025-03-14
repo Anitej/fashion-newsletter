@@ -172,6 +172,14 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+/* Center ConvertKit form */
+#convertkit-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   h1 {
@@ -223,3 +231,47 @@ h1 {
     margin-bottom: 15px;
   }
 }
+
+@media screen and (max-width: 768px) {
+    /* Adjust form width for smaller screens */
+    #convertkit-form {
+        max-width: 90% !important;
+        padding: 20px !important;
+    }
+
+    /* Ensure input fields are full-width */
+    #convertkit-form .formkit-input {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+
+    /* Center the form and make it compact */
+    #convertkit-form .formkit-column {
+        text-align: center !important;
+        padding: 15px !important;
+    }
+
+    /* Adjust the subscribe button for mobile */
+    #convertkit-form .formkit-submit {
+        width: 100% !important;
+        font-size: 16px !important;
+        padding: 12px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further compact form layout for small screens */
+    #convertkit-form {
+        padding: 15px !important;
+    }
+
+    /* Reduce font sizes slightly for better fit */
+    #convertkit-form h2 {
+        font-size: 20px !important;
+    }
+
+    #convertkit-form .formkit-submit {
+        font-size: 14px !important;
+    }
+}
+
